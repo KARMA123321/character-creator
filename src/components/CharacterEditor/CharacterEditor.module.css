@@ -4,10 +4,12 @@
 }
 
 .maxWidthWrapper {
+  isolation: isolate;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -16,6 +18,7 @@
   margin-top: 0;
   margin-bottom: 16px;
   letter-spacing: -0.5px;
+  margin-right: 20px;
 }
 
 .description {
@@ -24,7 +27,53 @@
 }
 
 .characterWrapper {
+  min-height: 500px;
+  min-width: 300px;
+  position: fixed;
+  left: 60%;
+  bottom: 5%;
 }
 
 .controlColumn {
+  width: 50%;
 }
+
+.perspectiveEffect {
+  background-color: hsl(195deg, 20%, 86%);
+  height: 38%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* @media (max-width: 500px) {
+  .characterEditor {
+    padding-top: 0;
+  }
+
+  header,
+  .title,
+  .description {
+    width: 100%;
+  }
+
+  .characterWrapper {
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    max-height: 50%;
+    margin-bottom: 64px;
+  }
+
+  .controlColumn {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    width: 100%;
+    z-index: 100;
+  }
+} */
